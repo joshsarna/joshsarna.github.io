@@ -1793,7 +1793,6 @@ input, select, textarea {
 		font-weight: 400;
 		letter-spacing: 0.075em;
 		margin-top: -0.5em;
-		text-transform: uppercase;
 	}
 
 	header.major > :last-child {
