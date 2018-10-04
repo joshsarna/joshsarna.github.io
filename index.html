@@ -7,6 +7,10 @@
 <html>
 	<head>
 		<title>Josh</title>
+	  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+	  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+	  <script src="index.js" defer></script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +26,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<p><strong>Home</strong> joshsarna</p>
+									<p><strong>JS</strong> joshsarna</p>
 									<!-- <a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a> -->
 									<ul class="icons">
 										<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -35,126 +39,11 @@
 									</ul>
 								</header>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Josh Sarna</h1>
-											<p>Software Engineer</p>
-										</header>
-										<p>I am a full-stack developer currently strengthening my skills in ruby. I have a chemistry and math background and am interested in the modeling of physical phenomena through statistical data. I am also passionate about disability rights and the accessibility of public resources.</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/quantum-states.jpg" alt="" />
-									</span>
-								</section>
+							<div id="vue-app">
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Areas of Focus</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-diamond"></span>
-											<div class="content">
-												<h3>Ruby</h3>
-												<p>I program mostly in ruby.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-coffee"></span>
-											<div class="content">
-												<h3>Quantum Chemistry</h3>
-												<p>This is cool.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-thumb-tack"></span>
-											<div class="content">
-												<h3>Resource Mapping</h3>
-												<p>I care about the accessibility of public resources.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-book"></span>
-											<div class="content">
-												<h3>Stories</h3>
-												<p>I am an avid reader.</p>
-											</div>
-										</article>
-									</div>
-								</section>
+						    <router-view></router-view>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Selected Projects</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="https://github.com/joshsarna/mini_capstone" class="image"><img src="images/michael-crichton-books.jpg" alt="" /></a>
-											<h3>Online Model Book Store</h3>
-											<p>Using ruby on rails, I am modeling an online store in which inventory can be viewed and updated. This project is currently in development.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joshsarna/mini-capstone-client" class="button">Front-End Code</a></li>
-												<li><a href="https://github.com/joshsarna/mini_capstone" class="button">Back-End Code</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="https://github.com/joshsarna/elements_api" class="image"><img src="images/periodic_table.png" alt="" /></a>
-											<h3>Periodic Table</h3>
-											<p>I decided to make a periodic table app largely in order to practice and showcase my Bootstrap grid skills.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joshsarna/elements_api" class="button">API</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="https://github.com/joshsarna/practice_problems/tree/master/project_euler" class="image"><img src="images/euler.jpeg" alt="" /></a>
-											<h3>Project Euler</h3>
-											<p>I am working through these problems in order. For the most part, I have not updated old problem solutions, so my idiomatic ruby, commenting, and benchmarking will be better in later problems. My solutions to later problems are also more efficient.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joshsarna/practice_problems/tree/master/project_euler" class="button">Solutions</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/codewars.png" alt="" /></a>
-											<h3>Codewars</h3>
-											<p>I don't use codewars as often as Project Euler, but I use it for a wider variety of languages. On my profile, you can view my algorithm practice in javascript, ruby, and python.</p>
-											<ul class="actions">
-												<li><a href="https://www.codewars.com/users/joshsarna" class="button">Profile</a></li>
-											</ul>
-										</article>
-<!-- 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article> -->
-<!-- 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article> -->
-									</div>
-								</section>
-
+						  </div>
 						</div>
 					</div>
 
@@ -175,8 +64,9 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="til.html">Today I Learned</a></li>
+										<li><a href="/#/">Homepage</a></li>
+										<li><a href="/#/til">Today I Learned</a></li>
+										<li><a href="about.html">About Josh</a></li>
 										<!-- <li><a href="elements.html">Elements</a></li> -->
 										<li>
 											<span class="opener">Projects</span>
@@ -261,3 +151,131 @@
 
 	</body>
 </html>
+
+<template id="home-page">
+  <div class="vue-component">
+	<!-- Banner -->
+		<section id="banner">
+			<div class="content">
+				<header>
+					<h1>Josh Sarna</h1>
+					<p>Software Engineer</p>
+				</header>
+				<p>As a web developer with a physical science background, I bring to coding an analytical mindset ideal for problem solving and efficiency. I enjoy creating algorithms and incorporating mathematical tools into things I create. In my experience, software development and math both transcend disciplinary categorization. There’s nothing that can’t be better understood through math, and there’s nothing that can’t be furthered and improved by JavaScript.</p>
+				<ul class="actions">
+					<li><a href="about.html" class="button big">Learn More</a></li>
+				</ul>
+			</div>
+			<span class="image object">
+				<img src="images/quantum-states.jpg" alt="" />
+			</span>
+		</section>
+
+	<!-- Section -->
+		<section>
+			<header class="major">
+				<h2>Areas of Focus</h2>
+			</header>
+			<div class="features">
+				<article>
+					<span class="icon fa-diamond"></span>
+					<div class="content">
+						<h3>Ruby</h3>
+						<p>I program mostly in ruby.</p>
+					</div>
+				</article>
+				<article>
+					<span class="icon fa-coffee"></span>
+					<div class="content">
+						<h3>Quantum Chemistry</h3>
+						<p>This is cool.</p>
+					</div>
+				</article>
+				<article>
+					<span class="icon fa-thumb-tack"></span>
+					<div class="content">
+						<h3>Resource Mapping</h3>
+						<p>I care about the accessibility of public resources.</p>
+					</div>
+				</article>
+				<article>
+					<span class="icon fa-book"></span>
+					<div class="content">
+						<h3>Stories</h3>
+						<p>I am an avid reader.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+	<!-- Section -->
+		<section>
+			<header class="major">
+				<h2>Selected Projects</h2>
+			</header>
+			<div class="posts">
+				<article>
+					<a href="https://github.com/joshsarna/mini_capstone" class="image"><img src="images/michael-crichton-books.jpg" alt="" /></a>
+					<h3>Online Model Book Store</h3>
+					<p>Using ruby on rails, I am modeling an online store in which inventory can be viewed and updated. This project is currently in development.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/joshsarna/mini-capstone-client" class="button">Front-End Code</a></li>
+						<li><a href="https://github.com/joshsarna/mini_capstone" class="button">Back-End Code</a></li>
+					</ul>
+				</article>
+				<article>
+					<a href="https://github.com/joshsarna/elements_api" class="image"><img src="images/periodic_table.png" alt="" /></a>
+					<h3>Periodic Table</h3>
+					<p>I decided to make a periodic table app largely in order to practice and showcase my Bootstrap grid skills.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/joshsarna/elements_api" class="button">API</a></li>
+					</ul>
+				</article>
+				<article>
+					<a href="https://github.com/joshsarna/practice_problems/tree/master/project_euler" class="image"><img src="images/euler.jpeg" alt="" /></a>
+					<h3>Project Euler</h3>
+					<p>I am working through these problems in order. For the most part, I have not updated old problem solutions, so my idiomatic ruby, commenting, and benchmarking will be better in later problems. My solutions to later problems are also more efficient.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/joshsarna/practice_problems/tree/master/project_euler" class="button">Solutions</a></li>
+					</ul>
+				</article>
+				<article>
+					<a href="#" class="image"><img src="images/codewars.png" alt="" /></a>
+					<h3>Codewars</h3>
+					<p>I don't use codewars as often as Project Euler, but I use it for a wider variety of languages. On my profile, you can view my algorithm practice in javascript, ruby, and python.</p>
+					<ul class="actions">
+						<li><a href="https://www.codewars.com/users/joshsarna" class="button">Profile</a></li>
+					</ul>
+				</article>
+				<!-- <article>
+					<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+					<h3>Sed etiam facilis</h3>
+					<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+					<ul class="actions">
+						<li><a href="#" class="button">More</a></li>
+					</ul>
+				</article> -->
+				<!-- <article>
+					<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+					<h3>Feugiat lorem aenean</h3>
+					<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+					<ul class="actions">
+						<li><a href="#" class="button">More</a></li>
+					</ul>
+				</article>
+				<article>
+					<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+					<h3>Amet varius aliquam</h3>
+					<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+					<ul class="actions">
+						<li><a href="#" class="button">More</a></li>
+					</ul>
+				</article> -->
+			</div>
+		</section>
+  </div>
+</template>
+
+<template id="til">
+	<p>TILTILTIL</p>
+</template>
