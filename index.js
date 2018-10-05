@@ -53,7 +53,7 @@ var router = new VueRouter({
     { path: "/", component: HomePage },
     { path: "/til", component: TIL },
     { path: "/about", component: AboutPage },
-    { path: "/middlemaps", component: MiddleMaps }
+    { path: "/middle-maps", component: MiddleMaps }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
