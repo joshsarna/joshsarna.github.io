@@ -1,5 +1,17 @@
 /* global Vue, VueRouter, axios */
 
+var MiddleMaps = {
+  template: "#middle-maps",
+  data: function() {
+    return {
+      message: "Middle Maps"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var AboutPage = {
   template: "#about-page",
   data: function() {
@@ -40,7 +52,8 @@ var router = new VueRouter({
   routes: [
     { path: "/", component: HomePage },
     { path: "/til", component: TIL },
-    { path: "/about", component: AboutPage }
+    { path: "/about", component: AboutPage },
+    { path: "/middlemaps", component: MiddleMaps }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
