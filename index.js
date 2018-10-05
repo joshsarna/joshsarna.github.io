@@ -1,5 +1,17 @@
 /* global Vue, VueRouter, axios */
 
+var PeriodicTable = {
+  template: "#periodic-table",
+  data: function() {
+    return {
+      message: "Middle Maps"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var BookStore = {
   template: "#book-store",
   data: function() {
@@ -66,7 +78,8 @@ var router = new VueRouter({
     { path: "/til", component: TIL },
     { path: "/about", component: AboutPage },
     { path: "/middle-maps", component: MiddleMaps },
-    { path: "/book-store", component: BookStore }
+    { path: "/book-store", component: BookStore },
+    { path: "/periodic-table", component: PeriodicTable }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
