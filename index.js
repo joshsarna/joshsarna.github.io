@@ -1,5 +1,17 @@
 /* global Vue, VueRouter, axios */
 
+var AboutPage = {
+  template: "#about-page",
+  data: function() {
+    return {
+      message: "About Page"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var TIL = {
   template: "#til",
   data: function() {
@@ -27,7 +39,8 @@ var HomePage = {
 var router = new VueRouter({
   routes: [
     { path: "/", component: HomePage },
-    { path: "/til", component: TIL }
+    { path: "/til", component: TIL },
+    { path: "/about", component: AboutPage }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
