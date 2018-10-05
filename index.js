@@ -1,5 +1,17 @@
 /* global Vue, VueRouter, axios */
 
+var BookStore = {
+  template: "#book-store",
+  data: function() {
+    return {
+      message: "Middle Maps"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var MiddleMaps = {
   template: "#middle-maps",
   data: function() {
@@ -53,7 +65,8 @@ var router = new VueRouter({
     { path: "/", component: HomePage },
     { path: "/til", component: TIL },
     { path: "/about", component: AboutPage },
-    { path: "/middle-maps", component: MiddleMaps }
+    { path: "/middle-maps", component: MiddleMaps },
+    { path: "/book-store", component: BookStore }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };

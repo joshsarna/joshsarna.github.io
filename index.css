@@ -1,3 +1,7 @@
 .fit-to-page {
   width: 100%;
 }
+
+.fit-to-half-page {
+  width: 50%;
+}
