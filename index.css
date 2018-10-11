@@ -5,3 +5,7 @@
 .fit-to-half-page {
   width: 50%;
 }
+
+.bold {
+  font-weight: bold;
+}
