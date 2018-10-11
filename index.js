@@ -4,7 +4,7 @@ var PeriodicTable = {
   template: "#periodic-table",
   data: function() {
     return {
-      message: "Middle Maps"
+      message: "Periodic Table"
     };
   },
   created: function() {},
@@ -16,7 +16,7 @@ var BookStore = {
   template: "#book-store",
   data: function() {
     return {
-      message: "Middle Maps"
+      message: "Book Store"
     };
   },
   created: function() {},
