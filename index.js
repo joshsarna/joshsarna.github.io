@@ -68,7 +68,7 @@ var Repertoire = {
           ]
         },
         {
-          category: "TeamDev",
+          category: "Team Dev",
           specificSkills: [
             "Pair Programming",
             "Git/Github",
