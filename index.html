@@ -340,7 +340,7 @@
 	<div class="vue-component">
 		<div class="row">
 		  <section>
-		    <header class="main col-6">
+		    <header class="main col-6 fit-to-half-page">
 		      <h1>Logic</h1>
 		    </header>
 		    <div class="row">
@@ -351,9 +351,15 @@
 			  </div>
 		  </section>
 		  <section>
-		    <header class="main col-6">
+		    <header class="main col-6 fit-to-half-page">
 		      <h1>Syntax</h1>
 		    </header>
+		    <div class="row">
+			    <div v-for="syntax in syntaxes" class="col-3">
+			    	<h3>{{ syntax.title }}</h3>
+			    	<p>{{ syntax.description }}</p>
+			    </div>
+			  </div>
 		  </section>
 		</div>
 	  

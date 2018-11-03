@@ -122,12 +122,12 @@ var Repertoire = {
         {
           title: "CSS Diner",
           url: "",
-          description: ""
+          description: "Practice with CSS Selectors"
         },
         {
           title: "SQL Bolt",
           url: "",
-          description: ""
+          description: "Practice with SQL Queries"
         }
       ]
     };
