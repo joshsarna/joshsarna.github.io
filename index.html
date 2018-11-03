@@ -342,15 +342,16 @@
 	    <header class="main">
 	      <h1>Logic & Syntax</h1>
 	    </header>
-	    <div v-for="skill in skills">
-		    <h3>{{ skill.category }}</h3>
-		    <ul>
-		    	<li v-for="specificSkill in skill.specificSkills">
-		    		{{ specificSkill }}
-		    	</li>
-		    </ul>
-
-	    
+	    <div class="row">
+		    <div v-for="skill in skills" class="col-3">
+			    <h3>{{ skill.category }}</h3>
+			    <ul>
+			    	<li v-for="specificSkill in skill.specificSkills">
+			    		{{ specificSkill }}
+			    	</li>
+			    </ul>
+			  </div>
+			</div>
 	  </section>
 	</div>
 </template>
