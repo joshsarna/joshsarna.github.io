@@ -340,26 +340,28 @@
 	<div class="vue-component">
 		<div class="row">
 		  <section>
-		    <header class="main col-6">
-		      <h1>Logic</h1>
-		    </header>
-		    <div class="row fit-to-half-page">
-			    <div v-for="logic in logics" class="col-3">
-			    	<a :href="logic.url"><h3 class="blue">{{ logic.title }}</h3></a>
-			    	<p>{{ logic.description }}</p>
-			    </div>
-			  </div>
-		  </section>
-		  <section>
-		    <header class="main col-6">
-		      <h1>Syntax</h1>
-		    </header>
-		    <div class="row fit-to-half-page">
-			    <div v-for="syntax in syntaxes" class="col-3">
-			    	<h3>{{ syntax.title }}</h3>
-			    	<p>{{ syntax.description }}</p>
-			    </div>
-			  </div>
+		  	<div class="col-6">
+			    <header class="main">
+			      <h1>Logic</h1>
+			    </header>
+			    <div class="row fit-to-half-page">
+				    <div v-for="logic in logics" class="col-3">
+				    	<a :href="logic.url"><h3 class="blue">{{ logic.title }}</h3></a>
+				    	<p>{{ logic.description }}</p>
+				    </div>
+				  </div>
+				</div>
+				<div class="col-6">
+			    <header class="main">
+			      <h1>Syntax</h1>
+			    </header>
+			    <div class="row fit-to-half-page">
+				    <div v-for="syntax in syntaxes" class="col-3">
+				    	<h3>{{ syntax.title }}</h3>
+				    	<p>{{ syntax.description }}</p>
+				    </div>
+				  </div>
+				</div>
 		  </section>
 		</div>
 	  
