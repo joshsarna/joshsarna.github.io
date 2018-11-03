@@ -100,6 +100,35 @@ var Repertoire = {
             "Wolfram Mathematica"
           ]
         }
+      ],
+      logics: [
+        {
+          title: "Project Euler",
+          url: "https://github.com/joshsarna/practice_problems/tree/master/project_euler",
+          description: "Coding challenges completed in Ruby"
+        },
+        {
+          title: "Code Wars",
+          url: "https://www.codewars.com/users/joshsarna",
+          description: "Coding challenges completed in Ruby, JavaScript, and Python"
+        },
+        {
+          title: "Exercism",
+          url: "https://github.com/joshsarna/Exercism",
+          description: "Coding challenges completed in Ruby, R, and Python"
+        }
+      ],
+      syntaxes: [
+        {
+          title: "CSS Diner",
+          url: "",
+          description: ""
+        },
+        {
+          title: "SQL Bolt",
+          url: "",
+          description: ""
+        }
       ]
     };
   },

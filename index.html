@@ -340,12 +340,18 @@
 	<div class="vue-component">
 		<div class="row">
 		  <section>
-		    <header class="main col">
+		    <header class="main col-6">
 		      <h1>Logic</h1>
 		    </header>
+		    <div class="row">
+			    <div v-for="logic in logics" class="col-3">
+			    	<a :href="logic.url"><h3>{{ logic.title }}</h3></a>
+			    	<p>{{ logic.description }}</p>
+			    </div>
+			  </div>
 		  </section>
 		  <section>
-		    <header class="main col">
+		    <header class="main col-6">
 		      <h1>Syntax</h1>
 		    </header>
 		  </section>
@@ -353,6 +359,7 @@
 	  
 	  <section>
 	    <div class="row">
+	    	<h1>Languages and Technologies</h1>
 		    <div v-for="skill in skills" class="col-3">
 			    <h3>{{ skill.category }}</h3>
 			    <ul>
