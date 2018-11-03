@@ -338,12 +338,22 @@
 
 <template id="repertoire">
 	<div class="vue-component">
+		<div class="row">
+		  <section>
+		    <header class="main col">
+		      <h1>Logic</h1>
+		    </header>
+		  </section>
+		  <section>
+		    <header class="main col">
+		      <h1>Syntax</h1>
+		    </header>
+		  </section>
+		</div>
+	  
 	  <section>
-	    <header class="main">
-	      <h1>Logic & Syntax</h1>
-	    </header>
 	    <div class="row">
-		    <div v-for="skill in skills" class="col-3" style="height:100%">
+		    <div v-for="skill in skills" class="col-3">
 			    <h3>{{ skill.category }}</h3>
 			    <ul>
 			    	<li v-for="specificSkill in skill.specificSkills">

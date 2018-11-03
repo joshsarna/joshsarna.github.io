@@ -86,6 +86,7 @@ var Repertoire = {
             "Webpack",
             "APIs",
             "AWS",
+            "Docker",
             "Heroku",
             "Bash"
           ]
