@@ -1,5 +1,17 @@
 /* global Vue, VueRouter, axios */
 
+var Repertoire = {
+  template: "#repertoire",
+  data: function() {
+    return {
+      message: "Periodic Table"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var PeriodicTable = {
   template: "#periodic-table",
   data: function() {
@@ -77,6 +89,7 @@ var router = new VueRouter({
     { path: "/", component: HomePage },
     { path: "/til", component: TIL },
     { path: "/about", component: AboutPage },
+    { path: "/repertoire", component: Repertoire },
     { path: "/middle-maps", component: MiddleMaps },
     { path: "/book-store", component: BookStore },
     { path: "/periodic-table", component: PeriodicTable }
