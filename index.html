@@ -342,13 +342,15 @@
 	    <header class="main">
 	      <h1>Logic & Syntax</h1>
 	    </header>
-	    <img src="images/periodic_table.png" class="fit-to-half-page">
-	    <p>I decided to make a periodic table app largely in order to practice Bootstrap Grid. This is an ongoing project, as I plan to make the same app using CSS Grid Layout and compare the results</p>
-	    <p>One of the largest challenges I experienced while making this app using Bootstrap was getting around Bootstrap's column limit. I wrote a blog post to explain the process and the solution I reached.</p>
-			<ul class="actions">
-				<li><a href="https://github.com/joshsarna/elements_api" class="button">Github</a></li>
-				<li><a href="https://medium.com/@joshsarna/i-was-making-a-periodic-table-app-today-using-rails-vue-js-f0d4f2976dc1" class="button">Medium</a></li>
-			</ul>
+	    <div v-for="skill in skills">
+		    <h3>{{ skill.category }}</h3>
+		    <ul>
+		    	<li v-for="specificSkill in skill.specificSkills">
+		    		{{ specificSkill }}
+		    	</li>
+		    </ul>
+
+	    
 	  </section>
 	</div>
 </template>

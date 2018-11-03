@@ -4,7 +4,102 @@ var Repertoire = {
   template: "#repertoire",
   data: function() {
     return {
-      message: "Periodic Table"
+      skills: [
+        {
+          category: "Ruby",
+          specificSkills: [
+            "Rails",
+            "Minitest",
+            "RSpec",
+            "Unirest",
+            "bcrypt/devise"
+          ]
+        },
+        {
+          category: "JavaScript",
+          specificSkills: [
+            "Vue",
+            "React",
+            "Angular",
+            "Node",
+            "Vuex",
+            "Ajax/Axios",
+            "Babel",
+            "Typescript",
+            "jsDraw"
+          ]
+        },
+        {
+          category: "Python",
+          specificSkills: [
+            "Django",
+            "NumPy"
+          ]
+        },
+        {
+          category: "SQL",
+          specificSkills: [
+            "PostgreSQL",
+            "MySQL",
+            "Postico",
+            "SequelPro"
+          ]
+        },
+        {
+          category: "R",
+          specificSkills: [
+            "Tidyverse",
+            "ggplot2",
+            "dplyr",
+            "tidytext"
+          ]
+        },
+        {
+          category: "CSS",
+          specificSkills: [
+            "Bootstrap",
+            "Bulma"
+          ]
+        },
+        {
+          category: "HTML",
+          specificSkills: [
+            "Emmet"
+          ]
+        },
+        {
+          category: "TeamDev",
+          specificSkills: [
+            "Pair Programming",
+            "Git/Github",
+            "OOP",
+            "TDD",
+            "Agile/Scrum",
+            "Jira",
+            "Confluence"
+          ]
+        },
+        {
+          category: "Local/Web Development",
+          specificSkills: [
+            "Visual Basic",
+            "Webpack",
+            "APIs",
+            "AWS",
+            "Heroku",
+            "Bash"
+          ]
+        },
+        {
+          category: "Math",
+          specificSkills: [
+            "Algorithms/Logic Problems",
+            "Big O/Time efficiency",
+            "MATLAB",
+            "Wolfram Mathematica"
+          ]
+        }
+      ]
     };
   },
   created: function() {},
