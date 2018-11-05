@@ -55,6 +55,12 @@ var Repertoire = {
           ]
         },
         {
+          category: "PHP",
+          specificSkills: [
+            "Wordpress"
+          ]
+        },
+        {
           category: "CSS",
           specificSkills: [
             "Bootstrap",
@@ -88,6 +94,7 @@ var Repertoire = {
             "AWS",
             "Docker",
             "Heroku",
+            "Pressable",
             "Bash"
           ]
         },
