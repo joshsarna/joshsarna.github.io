@@ -95,7 +95,8 @@ var Repertoire = {
             "Docker",
             "Heroku",
             "Pressable",
-            "Bash"
+            "Bash",
+            "Insomnia"
           ]
         },
         {
