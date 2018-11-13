@@ -57,7 +57,8 @@ var Repertoire = {
         {
           category: "PHP",
           specificSkills: [
-            "Wordpress"
+            "Wordpress",
+            "Local"
           ]
         },
         {
@@ -95,6 +96,7 @@ var Repertoire = {
             "Docker",
             "Heroku",
             "Pressable",
+            "NGINX",
             "Bash",
             "Insomnia"
           ]
