@@ -9,6 +9,7 @@ var Repertoire = {
           category: "Ruby",
           specificSkills: [
             "Rails",
+            "http gem",
             "Minitest",
             "RSpec",
             "Unirest",
