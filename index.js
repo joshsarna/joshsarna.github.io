@@ -18,8 +18,10 @@ var Repertoire = {
         {
           category: "JavaScript",
           specificSkills: [
+            "ES6",
             "Vue",
             "React",
+            "JSX",
             "Angular",
             "Node",
             "Vuex",
@@ -94,6 +96,7 @@ var Repertoire = {
             "APIs",
             "AWS",
             "Docker",
+            "Jenkins",
             "Heroku",
             "Pressable",
             "NGINX",
