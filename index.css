@@ -23,7 +23,8 @@
 }
 
 .about-image {
-  max-width: 40%;
+  max-width: 300px;
+  float: right;
 }
 
 .video {
