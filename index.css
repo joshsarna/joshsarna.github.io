@@ -18,8 +18,12 @@
   margin-bottom: 50px;
 }
 
-.top-image {
+.top-image, .about-image {
   transform: rotate(90deg);
+}
+
+.about-image {
+  max-width: 40%;
 }
 
 .video {
