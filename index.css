@@ -21,3 +21,8 @@
 .top-image {
   transform: rotate(90deg);
 }
+
+.video {
+  max-width: 1120px;
+  max-height: 630px;
+}
