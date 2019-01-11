@@ -17,3 +17,7 @@
 .space-below {
   margin-bottom: 50px;
 }
+
+.top-image {
+  transform: rotate(270deg);
+}
