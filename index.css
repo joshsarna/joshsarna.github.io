@@ -23,8 +23,8 @@
 }
 
 .video {
-  max-width: 1120px;
-  max-height: 630px;
+  width: 1120px;
+  height: 630px;
 }
 
 .video-container {
