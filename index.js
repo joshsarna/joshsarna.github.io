@@ -119,17 +119,20 @@ var Repertoire = {
         {
           title: "Project Euler",
           url: "https://github.com/joshsarna/practice_problems/tree/master/project_euler",
-          description: "Coding challenges completed in Ruby"
+          description: "Coding challenges completed in Ruby",
+          image_url: "https://projecteuler.net/profile/joshsarna.png"
         },
         {
           title: "Code Wars",
           url: "https://www.codewars.com/users/joshsarna",
-          description: "Coding challenges completed in Ruby, JavaScript, and Python"
+          description: "Coding challenges completed in Ruby, JavaScript, and Python",
+          image_url: ""
         },
         {
           title: "Exercism",
           url: "https://github.com/joshsarna/Exercism",
-          description: "Coding challenges completed in Ruby, R, and Python"
+          description: "Coding challenges completed in Ruby, R, and Python",
+          image_url: ""
         }
       ],
       syntaxes: [
