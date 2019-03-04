@@ -1,5 +1,17 @@
 /* global Vue, VueRouter, axios */
 
+var Gems = {
+  template: "#gems",
+  data: function() {
+    return {
+      message: "Gems"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var Repertoire = {
   template: "#repertoire",
   data: function() {
@@ -234,7 +246,8 @@ var router = new VueRouter({
     { path: "/repertoire", component: Repertoire },
     { path: "/middle-maps", component: MiddleMaps },
     { path: "/book-store", component: BookStore },
-    { path: "/periodic-table", component: PeriodicTable }
+    { path: "/periodic-table", component: PeriodicTable },
+    { path: "/gems", component: Gems },
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
