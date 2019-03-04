@@ -4,7 +4,30 @@ var Gems = {
   template: "#gems",
   data: function() {
     return {
-      message: "Gems"
+      message: "Gems",
+      gems: [
+        {
+          name: "red_book",
+          rubygemsUrl: "https://rubygems.org/gems/red_book",
+          githubUrl: "https://github.com/joshsarna/red_book",
+          description: "",
+          currentVersion: "0.0.17"
+        },
+        {
+          name: "utsless",
+          rubygemsUrl: "https://rubygems.org/gems/utsless",
+          githubUrl: "https://github.com/joshsarna/utsless",
+          description: "",
+          currentVersion: "0.0.3"
+        },
+        {
+          name: "fellowship",
+          rubygemsUrl: "https://rubygems.org/gems/fellowship",
+          githubUrl: "https://github.com/joshsarna/fellowship",
+          description: "",
+          currentVersion: "0.0.1"
+        }
+      ]
     };
   },
   created: function() {},
