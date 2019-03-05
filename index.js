@@ -18,14 +18,14 @@ var Gems = {
           rubygemsUrl: "https://rubygems.org/gems/utsless",
           githubUrl: "https://github.com/joshsarna/utsless",
           description: "I originally made this gem as a joke. The idea came when I was going over the differences between 'puts', 'p', and 'return' with students learning rails: return in methods, p when debugging, and never puts again. I created utsless, a gem that executes all puts statements as p statements. That is still the core of its functionality, but I've added other features that allow the user to print relevant information about objects, like their class trees.",
-          currentVersion: "0.0.5"
+          currentVersion: "0.0.7"
         },
         {
           name: "fellowship",
           rubygemsUrl: "https://rubygems.org/gems/fellowship",
           githubUrl: "https://github.com/joshsarna/fellowship",
           description: "This is a set of tools for solving algorithm problems. I found myself using the same methods repeatedly while working my way through Project Euler, and I wanted to codify and DRY.",
-          currentVersion: "0.0.1"
+          currentVersion: "0.0.5"
         }
       ]
     };
