@@ -439,6 +439,12 @@
 
 <template id="gems">
 	<div class="vue-component">
-		<p>{{ message }}</p>
+		<div v-for="gem in gems">
+			<h3>{{ gem.name }}</h3>
+			<p> >> {{ gem.currentVersion }}</p>
+			<p>{{ gem.description }}</p>
+			<p :href="gem.githubUrl">github</p>
+			<p :href="gem.rubygemsUrl">rubygems.org</p>
+		</div>
 	</div>
 </template>
