@@ -443,8 +443,8 @@
 			<h3>{{ gem.name }}</h3>
 			<p> >> {{ gem.currentVersion }}</p>
 			<p>{{ gem.description }}</p>
-			<p :href="gem.githubUrl">github</p>
-			<p :href="gem.rubygemsUrl">rubygems.org</p>
+			<a class="gem-link" :href="gem.githubUrl">github</a>
+			<a class="gem-link" :href="gem.rubygemsUrl">rubygems.org</a>
 		</div>
 	</div>
 </template>
