@@ -24,8 +24,8 @@ var Gems = {
           name: "fellowship",
           rubygemsUrl: "https://rubygems.org/gems/fellowship",
           githubUrl: "https://github.com/joshsarna/fellowship",
-          description: "This is a set of tools for solving algorithm problems. I found myself using the same methods repeatedly while working my way through Project Euler, and I wanted to codify and DRY.",
-          currentVersion: "0.0.5"
+          description: "This is a set of tools for solving algorithm problems. I found myself using the same methods repeatedly while working my way through Project Euler, and I wanted to codify and DRY. This gem also has two versions of a route-finding algorithm I used while creatig Middle Maps.",
+          currentVersion: "1.0.0"
         }
       ]
     };
