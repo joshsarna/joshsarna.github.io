@@ -6,7 +6,16 @@ var Actualize = {
     return {
       message: "Actualize",
       gists: [],
-      cheatsheets: []
+      cheatsheets: [
+        {
+          title: "Vue Attributes Cheat Sheet",
+          url: "https://docs.google.com/document/d/1AiAKuqwi6evVKoA050vClO4HUAUAouiZUNcP31XLPq4/edit?usp=sharing"
+        },
+        {
+          title: "Vue Directives Cheat Sheet",
+          url: "https://docs.google.com/document/d/1ye5RiowHBg-1hxjAPRxzh3ppkT2ahFOWcnoIDJlL_1M/edit?usp=sharing"
+        }
+      ]
 
     };
   },
