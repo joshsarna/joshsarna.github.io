@@ -128,7 +128,8 @@ var Repertoire = {
             "Minitest",
             "RSpec",
             "Unirest",
-            "bcrypt/devise"
+            "bcrypt/devise",
+            "nokogiri"
           ]
         },
         {
@@ -151,7 +152,8 @@ var Repertoire = {
           category: "Python",
           specificSkills: [
             "Django",
-            "NumPy"
+            "NumPy",
+            "Pygame"
           ]
         },
         {
