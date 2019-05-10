@@ -54,6 +54,7 @@
 						<ul>
 							<li><a href="/#/">Homepage</a></li>
 							<li><a href="/#/about">About Josh</a></li>
+							<li><a href="/#/actualize">Teaching</a></li>
 							<li>
 								<span class="opener">Projects</span>
 								<ul>
@@ -263,7 +264,7 @@
 			<div class="posts">
 				<article>
 					<h3>Software Engineer & TA :: 2018 - Present</h3>
-					<h4>Actualize</h4>
+					<h4><a href="/#/actualize">Actualize</a></h4>
 					<p>• TAship: Teach coding lessons to a live online class; assist students in developing their programming skills by providing supplementary instructional material, troubleshooting applications, and asking follow-up questions on coding techniques; contribute to curriculm; grade student assignments through Github code review</p>
 					<p>• Middle Maps: Built an app that allows a user to search locations in Middle Earth (setting of Lord of the Rings) and to find routes between locations; learned jsGraphics and Heroku and wrote an efficient shortest-route algorithm in Ruby; the backend of this app is built on Rails, and the front-end is built on VueJS</p>
 					<p>• Bootcamp: Completed the three-month intensive Actualize bootcamp and learned Ruby, Rails, JavaScript, VueJS, HTML, and CSS; learned how to build front-end, back-end, and full-stack apps; gained the ability to learn new frameworks and technologies quickly</p>
@@ -467,7 +468,7 @@
 	      <h3>Gists</h3>
 		    <div class="fit-to-half-page">
 			    <div v-for="gist in gists">
-			    	<h3 class="blue"><a :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h3>
+			    	<h3><a class="blue" :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h3>
 			    </div>
 			  </div>
 			</div>
@@ -484,7 +485,7 @@
 		<h2>Student Presentations</h2>
 		<p>Below are the final presentations from students in cohorts I have helped teach.</p>
 		<section>
-			<div class="posts">
+			<div>
 				<article>
 					<div class="video-margin">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/bzS81wFMBws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
