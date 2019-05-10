@@ -468,16 +468,21 @@
 	      <h3>Gists</h3>
 		    <div class="fit-to-half-page">
 			    <div v-for="gist in gists">
-			    	<h3><a class="blue" :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h3>
+			    	<h4><a class="blue" :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h4>
 			    </div>
 			  </div>
 			</div>
 			<div class="col-6">
-	      <h3>Cheat Sheets</h3>
 		    <div class="fit-to-half-page">
+		      <h3>Cheat Sheets</h3>
 			    <div v-for="cheatsheet in cheatsheets">
-			    	<h3 class="blue"><a :href="cheatsheet.url">{{ cheatsheet.title }}</a></h3>
+			    	<h4 class="blue"><a :href="cheatsheet.url">{{ cheatsheet.title }}</a></h4>
 			    </div>
+				  <hr>
+				  <h3>Blog Posts</h3>
+				  <div v-for="post in posts">
+				  	<h4><a :href="post.url">{{ post.title }}</a></h4>
+				  </div>
 			  </div>
 			</div>
 		</div>

@@ -71,8 +71,33 @@ var Actualize = {
           title: "Vue Directives Cheat Sheet",
           url: "https://docs.google.com/document/d/1ye5RiowHBg-1hxjAPRxzh3ppkT2ahFOWcnoIDJlL_1M/edit?usp=sharing"
         }
+      ],
+      posts: [
+        {
+          title: "The First Week after Bootcamp",
+          url: "https://medium.com/@joshsarna/the-first-week-after-bootcamp-fdd51ded359a"
+        },
+        {
+          title: "Avoiding Burnout when Learning",
+          url: "https://medium.com/@joshsarna/avoiding-burnout-when-learning-f4ea6bfa45d"
+        },
+        {
+          title: "Fibonacci the Easy Way: Intro to Ruby Recursion",
+          url: "https://medium.com/@joshsarna/fibonacci-the-easy-way-intro-to-ruby-recursion-9b60ef175c4d"
+        },
+        {
+          title: "Formatting Bootstrap Grids with 13+ Columns",
+          url: "https://medium.com/@joshsarna/i-was-making-a-periodic-table-app-today-using-rails-vue-js-f0d4f2976dc1"
+        },
+        {
+          title: "A Vue Directives Cheatsheet",
+          url: "https://medium.com/@joshsarna/a-vue-directives-cheatsheet-85af4d9075f5"
+        },
+        {
+          title: "Codified Knowledge",
+          url: "https://medium.com/@joshsarna/codified-knowledge-d01d9ae58bca"
+        }
       ]
-
     };
   },
   created: function() {},
