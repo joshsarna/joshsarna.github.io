@@ -5,7 +5,63 @@ var Actualize = {
   data: function() {
     return {
       message: "Actualize",
-      gists: [],
+      gists: [
+        {
+          title: "Variable Scope",
+          url: "https://gist.github.com/joshsarna/cc3ea6c22cb7e1e52b380f8f0bc620b0",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "Block Variables",
+          url: "https://medium.com/r/?url=https%3A%2F%2Fgist.github.com%2Fjoshsarna%2F721d878063cf810c6b9021c96047f20f",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "Variables in Methods",
+          url: "https://gist.github.com/joshsarna/4e1dfc74c7848805dd95f41657c27176",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "Method Types",
+          url: "https://gist.github.com/joshsarna/5490060fb2b004e9b9e7b15654aa2c82",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "p, puts, and return",
+          url: "https://gist.github.com/joshsarna/c6bd5a75ec179b770d73d579818c5cfb",
+          category: "Ruby/Rails: Showing Data"
+        },
+        {
+          title: "find and find_by",
+          url: "https://gist.github.com/joshsarna/c6bd5a75ec179b770d73d579818c5cfb",
+          category: "Ruby/Rails: ActiveRecord"
+        },
+        {
+          title: "Types of Loops",
+          url: "https://gist.github.com/joshsarna/57edfcf280a41a2b6048eb4a3b412c9b",
+          category: "JavaScript/Vue: Loops"
+        },
+        {
+          title: "Axios Callback Functions",
+          url: "https://gist.github.com/joshsarna/4ecd1699937b1cf75050911ed2353977",
+          category: "JavaScript/Vue: Web Requests"
+        },
+        {
+          title: "v-if and v-show",
+          url: "https://gist.github.com/joshsarna/527ee5c33438ec725bb1ae3f1351068b",
+          category: "JavaScript/Vue: Directives"
+        },
+        {
+          title: "Big O",
+          url: "https://gist.github.com/joshsarna/5e7f6af18d1075c7fd8d52026d6c2d5f",
+          category: "Computer Science"
+        },
+        {
+          title: "Good Commit Messages",
+          url: "https://gist.github.com/joshsarna/5c370a3f847ce7669b9db346f0b995d5",
+          category: "Git and Github"
+        }
+      ],
       cheatsheets: [
         {
           title: "Vue Attributes Cheat Sheet",
