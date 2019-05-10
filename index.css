@@ -57,5 +57,7 @@
 }
 
 .video-margin {
+  width: 95%;
+  padding: 2%;
   margin: 5px;
 }
