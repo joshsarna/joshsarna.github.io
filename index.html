@@ -463,22 +463,37 @@
 		<h2>Learning Resources</h2>
 		<p>Below are selected learning resources I have created</p>
 		<div class="row">
-		  	<div class="col-6">
-		      <h1>Gists</h1>
-			    <div class="fit-to-half-page">
-				    <div v-for="gist in gists">
-				    	<h3 class="blue"><a :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h3>
-				    </div>
-				  </div>
-				</div>
-				<div class="col-6">
-		      <h1>Cheat Sheets</h1>
-			    <div class="fit-to-half-page">
-				    <div v-for="cheatsheet in cheatsheets">
-				    	<h3 class="blue"><a :href="cheatsheet.url">{{ cheatsheet.title }}</a></h3>
-				    </div>
-				  </div>
-				</div>
+	  	<div class="col-6">
+	      <h3>Gists</h3>
+		    <div class="fit-to-half-page">
+			    <div v-for="gist in gists">
+			    	<h3 class="blue"><a :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h3>
+			    </div>
+			  </div>
+			</div>
+			<div class="col-6">
+	      <h3>Cheat Sheets</h3>
+		    <div class="fit-to-half-page">
+			    <div v-for="cheatsheet in cheatsheets">
+			    	<h3 class="blue"><a :href="cheatsheet.url">{{ cheatsheet.title }}</a></h3>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<hr>
+		<h2>Student Presentations</h2>
+		<p>Below are the final presentations from students in cohorts I have helped teach.</p>
+		<div class="posts">
+				<article>
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/bzS81wFMBws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</article>
+				<article>
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/sQUlfp6xdcs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</article>
 			</div>
 	</div>
 </template>
