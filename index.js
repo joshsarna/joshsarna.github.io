@@ -1,5 +1,20 @@
 /* global Vue, VueRouter, axios */
 
+var Actualize = {
+  template: "#actualize",
+  data: function() {
+    return {
+      message: "Actualize",
+      gists: [],
+      cheatsheets: []
+
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var Gems = {
   template: "#gems",
   data: function() {
@@ -271,6 +286,7 @@ var router = new VueRouter({
     { path: "/book-store", component: BookStore },
     { path: "/periodic-table", component: PeriodicTable },
     { path: "/gems", component: Gems },
+    { path: "/actualize", component: Actualize }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };

@@ -449,3 +449,30 @@
 		</div>
 	</div>
 </template>
+
+<template id="actualize">
+	<div class="vue-component">
+		<h1>{{ message }}</h1>
+		<p>As a TA at Actualize coding bootcampe, I teach Rails and Vue.js lessons to a live online class; assist students in developing their programming skills by providing supplementary instructional material, troubleshooting applications, and asking follow-up questions on coding techniques; and grade student assignments through Github code review.</p>
+		<h2>Learning Resources</h2>
+		<p>Below are selected learning resources I have created</p>
+		<div class="row">
+		  	<div class="col-6">
+		      <h1>Gists</h1>
+			    <div class="fit-to-half-page">
+				    <div v-for="gist in gists">
+				    	<h3 class="blue"><a :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h3>
+				    </div>
+				  </div>
+				</div>
+				<div class="col-6">
+		      <h1>Cheat Sheets</h1>
+			    <div class="fit-to-half-page">
+				    <div v-for="cheatsheet in cheatsheets">
+				    	<h3 class="blue"><a :href="cheatsheet.url">{{ cheatsheet.title }}</a></h3>
+				    </div>
+				  </div>
+				</div>
+			</div>
+	</div>
+</template>
