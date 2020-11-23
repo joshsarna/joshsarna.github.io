@@ -40,11 +40,11 @@
 				  </div>
 				</div>
 			</div>
-			<div id="sidebar">
+			<div id="sidebar" class="inactive">
 				<div class="inner">
 					<section id="search" class="alt">
 						<form method="post" action="#">
-							<input type="text" name="query" id="query" placeholder="Search" />
+							<!-- <input type="text" name="query" id="query" placeholder="Search" /> -->
 						</form>
 					</section>
 					<nav id="menu">
@@ -54,6 +54,7 @@
 						<ul>
 							<li><a href="/#/">Homepage</a></li>
 							<li><a href="/#/about">About Josh</a></li>
+							<li><a href="/#/actualize">Teaching</a></li>
 							<li>
 								<span class="opener">Projects</span>
 								<ul>
@@ -217,14 +218,24 @@
 						<li><a href="https://pure-fortress-35418.herokuapp.com/" class="button">See Site</a></li>
 					</ul>
 				</article>
-				<!-- <article>
-					<a href="/#/book-store" class="image"><img src="images/michael-crichton-books.jpg" alt="" /></a>
-					<h3>Online Model Book Store</h3>
-					<p>Using Ruby on Rails, I am modeling an online store in which inventory can be viewed and updated. This project is currently in development.</p>
+				<article>
+					<a href="https://bookbin.herokuapp.com" class="image"><img src="images/bookbin.jpeg" alt="" /></a>
+					<h3>BookBin</h3>
+					<p>BookBin is a book-recommendation app I've created based on a binary review system. Users rate books as "worth reading" or "not worth reading" and get recommendations based on their reviews' similarity with those of other users. I used Postgres, Rails, and Vue.</p>
 					<ul class="actions">
-						<li><a href="/#/book-store" class="button">See More</a></li>
+						<li><a href="https://bookbin.herokuapp.com" class="button">See Site</a></li>
+						<li><a href="https://github.com/joshsarna/bookbin" class="button">View GitHub</a></li>
 					</ul>
-				</article> -->
+				</article>
+				<article>
+					<a href="https://reckon.herokuapp.com" class="image"><img src="images/reckon.png" alt="" /></a>
+					<h3>Reckon</h3>
+					<p>Reckon is a scheduling app I made to practice manipulating datetime data. I used Postgres, Rails, and Vue.</p>
+					<ul class="actions">
+						<li><a href="https://reckon.herokuapp.com" class="button">See Site</a></li>
+						<li><a href="https://github.com/joshsarna/reckoning" class="button">View GitHub</a></li>
+					</ul>
+				</article>
 			</div>
 			<!-- <header class="major">
 				<h2>Syntax and Logic</h2>
@@ -263,8 +274,8 @@
 			<div class="posts">
 				<article>
 					<h3>Software Engineer & TA :: 2018 - Present</h3>
-					<h4>Actualize</h4>
-					<p>• TAship: Teach coding lessons to a live online class; assist students in developing their programming skills by providing supplementary instructional material, troubleshooting applications, and asking follow-up questions on coding techniques</p>
+					<h4><a href="/#/actualize">Actualize</a></h4>
+					<p>• TAship: Teach coding lessons to a live online class; assist students in developing their programming skills by providing supplementary instructional material, troubleshooting applications, and asking follow-up questions on coding techniques; contribute to curriculm; grade student assignments through Github code review</p>
 					<p>• Middle Maps: Built an app that allows a user to search locations in Middle Earth (setting of Lord of the Rings) and to find routes between locations; learned jsGraphics and Heroku and wrote an efficient shortest-route algorithm in Ruby; the backend of this app is built on Rails, and the front-end is built on VueJS</p>
 					<p>• Bootcamp: Completed the three-month intensive Actualize bootcamp and learned Ruby, Rails, JavaScript, VueJS, HTML, and CSS; learned how to build front-end, back-end, and full-stack apps; gained the ability to learn new frameworks and technologies quickly</p>
 				</article>
@@ -453,5 +464,56 @@
 			<a class="gem-link" :href="gem.githubUrl">github</a>
 			<a class="gem-link" :href="gem.rubygemsUrl">rubygems.org</a>
 		</div>
+	</div>
+</template>
+
+<template id="actualize">
+	<div class="vue-component">
+		<h1>{{ message }}</h1>
+		<p>As a TA at Actualize Coding Bootcamp, I teach Rails and Vue.js lessons to a live online class; assist students in developing their programming skills by providing supplementary instructional material, troubleshooting applications, and asking follow-up questions on coding techniques; contribute to curriculm; and grade student assignments through Github code review.</p>
+		<h2>Learning Resources</h2>
+		<p>Below are selected learning resources I have created</p>
+		<div class="row">
+	  	<div class="col-6">
+	      <h3>Gists</h3>
+		    <div class="fit-to-half-page">
+			    <div v-for="gist in gists">
+			    	<h4><a class="blue" :href="gist.url">{{ gist.title }}</a> ({{ gist.category }})</h4>
+			    </div>
+			  </div>
+			</div>
+			<div class="col-6">
+		    <div class="fit-to-half-page">
+		      <h3>Cheat Sheets</h3>
+			    <div v-for="cheatsheet in cheatsheets">
+			    	<h4 class="blue"><a :href="cheatsheet.url">{{ cheatsheet.title }}</a></h4>
+			    </div>
+				  <hr>
+				  <h3>Blog Posts</h3>
+				  <div v-for="post in posts">
+				  	<h4><a class="blue" :href="post.url">{{ post.title }}</a></h4>
+				  </div>
+			  </div>
+			</div>
+		</div>
+		<hr>
+		<h2>Student Presentations</h2>
+		<p>Below are the final presentations from students in cohorts I have helped teach.</p>
+		<section>
+			<div>
+				<article>
+					<div class="video-margin">
+						<p>Fall 2018 Cohort</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/bzS81wFMBws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</article>
+				<article>
+					<div class="video-margin">
+						<p>Spring 2019 Cohort</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/sQUlfp6xdcs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</article>
+			</div>
+		</section>
 	</div>
 </template>

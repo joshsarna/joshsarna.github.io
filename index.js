@@ -1,5 +1,110 @@
 /* global Vue, VueRouter, axios */
 
+var Actualize = {
+  template: "#actualize",
+  data: function() {
+    return {
+      message: "Actualize",
+      gists: [
+        {
+          title: "Variable Scope",
+          url: "https://gist.github.com/joshsarna/cc3ea6c22cb7e1e52b380f8f0bc620b0",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "Block Variables",
+          url: "https://medium.com/r/?url=https%3A%2F%2Fgist.github.com%2Fjoshsarna%2F721d878063cf810c6b9021c96047f20f",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "Variables in Methods",
+          url: "https://gist.github.com/joshsarna/4e1dfc74c7848805dd95f41657c27176",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "Method Types",
+          url: "https://gist.github.com/joshsarna/5490060fb2b004e9b9e7b15654aa2c82",
+          category: "Ruby/Rails: Variables and Methods"
+        },
+        {
+          title: "p, puts, and return",
+          url: "https://gist.github.com/joshsarna/c6bd5a75ec179b770d73d579818c5cfb",
+          category: "Ruby/Rails: Showing Data"
+        },
+        {
+          title: "find and find_by",
+          url: "https://gist.github.com/joshsarna/c6bd5a75ec179b770d73d579818c5cfb",
+          category: "Ruby/Rails: ActiveRecord"
+        },
+        {
+          title: "Types of Loops",
+          url: "https://gist.github.com/joshsarna/57edfcf280a41a2b6048eb4a3b412c9b",
+          category: "JavaScript/Vue: Loops"
+        },
+        {
+          title: "Axios Callback Functions",
+          url: "https://gist.github.com/joshsarna/4ecd1699937b1cf75050911ed2353977",
+          category: "JavaScript/Vue: Web Requests"
+        },
+        {
+          title: "v-if and v-show",
+          url: "https://gist.github.com/joshsarna/527ee5c33438ec725bb1ae3f1351068b",
+          category: "JavaScript/Vue: Directives"
+        },
+        {
+          title: "Big O",
+          url: "https://gist.github.com/joshsarna/5e7f6af18d1075c7fd8d52026d6c2d5f",
+          category: "Computer Science"
+        },
+        {
+          title: "Good Commit Messages",
+          url: "https://gist.github.com/joshsarna/5c370a3f847ce7669b9db346f0b995d5",
+          category: "Git and Github"
+        }
+      ],
+      cheatsheets: [
+        {
+          title: "Vue Attributes Cheat Sheet",
+          url: "https://docs.google.com/document/d/1AiAKuqwi6evVKoA050vClO4HUAUAouiZUNcP31XLPq4/edit?usp=sharing"
+        },
+        {
+          title: "Vue Directives Cheat Sheet",
+          url: "https://docs.google.com/document/d/1ye5RiowHBg-1hxjAPRxzh3ppkT2ahFOWcnoIDJlL_1M/edit?usp=sharing"
+        }
+      ],
+      posts: [
+        {
+          title: "The First Week after Bootcamp",
+          url: "https://medium.com/@joshsarna/the-first-week-after-bootcamp-fdd51ded359a"
+        },
+        {
+          title: "Avoiding Burnout when Learning",
+          url: "https://medium.com/@joshsarna/avoiding-burnout-when-learning-f4ea6bfa45d"
+        },
+        {
+          title: "Fibonacci the Easy Way: Intro to Ruby Recursion",
+          url: "https://medium.com/@joshsarna/fibonacci-the-easy-way-intro-to-ruby-recursion-9b60ef175c4d"
+        },
+        {
+          title: "Formatting Bootstrap Grids with 13+ Columns",
+          url: "https://medium.com/@joshsarna/i-was-making-a-periodic-table-app-today-using-rails-vue-js-f0d4f2976dc1"
+        },
+        {
+          title: "A Vue Directives Cheatsheet",
+          url: "https://medium.com/@joshsarna/a-vue-directives-cheatsheet-85af4d9075f5"
+        },
+        {
+          title: "Codified Knowledge",
+          url: "https://medium.com/@joshsarna/codified-knowledge-d01d9ae58bca"
+        }
+      ]
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var Gems = {
   template: "#gems",
   data: function() {
@@ -48,7 +153,8 @@ var Repertoire = {
             "Minitest",
             "RSpec",
             "Unirest",
-            "bcrypt/devise"
+            "bcrypt/devise",
+            "nokogiri"
           ]
         },
         {
@@ -71,7 +177,8 @@ var Repertoire = {
           category: "Python",
           specificSkills: [
             "Django",
-            "NumPy"
+            "NumPy",
+            "Pygame"
           ]
         },
         {
@@ -282,6 +389,7 @@ var router = new VueRouter({
     { path: "/book-store", component: BookStore },
     { path: "/periodic-table", component: PeriodicTable },
     { path: "/gems", component: Gems },
+    { path: "/actualize", component: Actualize }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
