@@ -18,8 +18,8 @@
   margin-bottom: 50px;
 }
 
-.top-image, .about-image {
-  transform: rotate(90deg);
+.main-image {
+  transform: rotate(-90deg);
 }
 
 .about-image {

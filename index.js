@@ -130,7 +130,6 @@ var Repertoire = {
             "Visual Basic",
             "Webpack",
             "APIs",
-            "AWS",
             "Docker",
             "Jenkins",
             "Heroku",
@@ -138,6 +137,18 @@ var Repertoire = {
             "NGINX",
             "Bash",
             "Insomnia"
+          ]
+        },
+        {
+          category: "AWS",
+          specificSkills: [
+            "EC2",
+            "S3",
+            "Elastic Beanstalk",
+            "IAM",
+            "API Gateway",
+            "Lambda",
+            "CloudWatch"
           ]
         },
         {
